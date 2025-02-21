@@ -1,0 +1,212 @@
+.form-container {
+  width: 100%;
+  max-width: 400px;
+  margin: 40px auto; /* Increased margin for better breathing room */
+  padding: 24px; /* Slightly larger padding */
+  border: none; /* Removed border for cleaner look */
+  border-radius: 12px; /* Smoother corners */
+  background-color: #ffffff; /* Pure white for crispness */
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.05), 
+              0 1px 3px rgba(0, 0, 0, 0.1); /* More sophisticated shadow */
+  transition: transform 0.2s ease, box-shadow 0.2s ease; /* Subtle hover animation */
+}
+
+.form-container:hover {
+  transform: translateY(-2px); /* Slight lift on hover */
+  box-shadow: 0 7px 14px rgba(0, 0, 0, 0.1), 
+              0 3px 6px rgba(0, 0, 0, 0.08);
+}
+
+h3 {
+  text-align: center;
+  margin-bottom: 20px; /* More space below */
+  color: #1a1a1a; /* Darker, more professional gray */
+  font-size: 24px; /* Larger for hierarchy */
+  font-weight: 600; /* Semi-bold for emphasis */
+  letter-spacing: -0.2px; /* Tighter spacing for polish */
+}
+
+.input-group {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 20px; /* Increased spacing between groups */
+}
+
+label {
+  font-weight: 500; /* Medium weight for better readability */
+  margin-bottom: 8px; /* More balanced spacing */
+  color: #2d3748; /* Professional slate gray */
+  font-size: 14px; /* Slightly smaller for hierarchy */
+}
+
+input {
+  padding: 10px 12px; /* More comfortable padding */
+  border: 1px solid #e2e8f0; /* Softer gray border */
+  border-radius: 6px; /* Slightly rounder */
+  font-size: 16px;
+  background-color: #fafafa; /* Light background for depth */
+  transition: all 0.2s ease; /* Smooth transitions */
+  box-shadow: inset 0 1px 2px rgba(0, 0, 0, 0.05); /* Subtle inner shadow */
+}
+
+input:focus {
+  border-color: #3182ce; /* More professional blue */
+  background-color: #ffffff; /* White on focus */
+  box-shadow: 0 0 0 3px rgba(49, 130, 206, 0.2), /* Modern focus ring */
+              inset 0 1px 2px rgba(0, 0, 0, 0.05);
+  outline: none;
+}
+
+/* Placeholder styling for extra polish */
+input::placeholder {
+  color: #a0aec0; /* Light gray for placeholders */
+  font-style: italic;
+}
+
+/* Optional: Add hover state for inputs */
+input:hover:not(:focus) {
+  border-color: #cbd5e0; /* Subtle hover effect */
+}
+
+
+
+
+
+/* Assuming the previous form styles are in Form.jsx, we'll add styles for App */
+
+/* Container for the entire app */
+.app-container {
+  min-height: 100vh;
+  background-color: #f7fafc; /* Light gray background for contrast */
+  padding: 40px 20px; /* Generous padding */
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  font-family: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif; /* Modern font stack */
+}
+
+/* Form container (from previous, included for context) */
+.form-container {
+  width: 100%;
+  max-width: 400px;
+  margin: 40px auto;
+  padding: 24px;
+  border-radius: 12px;
+  background-color: #ffffff;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.05), 
+              0 1px 3px rgba(0, 0, 0, 0.1);
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.form-container:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 7px 14px rgba(0, 0, 0, 0.1), 
+              0 3px 6px rgba(0, 0, 0, 0.08);
+}
+
+h3 {
+  text-align: center;
+  margin-bottom: 20px;
+  color: #1a1a1a;
+  font-size: 24px;
+  font-weight: 600;
+  letter-spacing: -0.2px;
+}
+
+.input-group {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 20px;
+}
+
+label {
+  font-weight: 500;
+  margin-bottom: 8px;
+  color: #2d3748;
+  font-size: 14px;
+}
+
+input {
+  padding: 10px 12px;
+  border: 1px solid #e2e8f0;
+  border-radius: 6px;
+  font-size: 16px;
+  background-color: #fafafa;
+  transition: all 0.2s ease;
+  box-shadow: inset 0 1px 2px rgba(0, 0, 0, 0.05);
+}
+
+input:focus {
+  border-color: #3182ce;
+  background-color: #ffffff;
+  box-shadow: 0 0 0 3px rgba(49, 130, 206, 0.2),
+              inset 0 1px 2px rgba(0, 0, 0, 0.05);
+  outline: none;
+}
+
+input::placeholder {
+  color: #a0aec0;
+  font-style: italic;
+}
+
+input:hover:not(:focus) {
+  border-color: #cbd5e0;
+}
+
+/* Styles for the output display */
+.data-display {
+  width: 100%;
+  max-width: 400px; /* Match form width */
+  margin: 20px auto;
+  padding: 24px;
+  background-color: #ffffff;
+  border-radius: 12px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.05),
+              0 1px 3px rgba(0, 0, 0, 0.1);
+}
+
+.data-display ul {
+  list-style: none; /* Remove default bullets */
+  padding: 0;
+  margin: 0;
+}
+
+.data-display li {
+  padding: 12px 0; /* Vertical spacing */
+  border-bottom: 1px solid #edf2f7; /* Subtle separator */
+  display: flex;
+  justify-content: space-between; /* Align label and value */
+  align-items: center;
+  font-size: 15px;
+  color: #2d3748; /* Match label color */
+}
+
+.data-display li:last-child {
+  border-bottom: none; /* Remove border on last item */
+}
+
+.data-display strong {
+  font-weight: 600; /* Slightly bolder than labels */
+  color: #1a1a1a; /* Match h3 color */
+  min-width: 150px; /* Ensure consistent alignment */
+}
+
+/* Responsive adjustments */
+@media (max-width: 480px) {
+  .form-container,
+  .data-display {
+    max-width: 100%;
+    margin: 20px 10px;
+    padding: 16px;
+  }
+
+  .data-display li {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 4px; /* Space between label and value on mobile */
+  }
+
+  .data-display strong {
+    min-width: auto;
+  }
+}
