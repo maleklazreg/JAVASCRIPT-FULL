@@ -57,7 +57,7 @@ import React, { useState } from 'react';
                 onChange={handleChange}
             />
             </div>
-            <div >
+            <div>
             <label htmlFor="password" className="form-label">
                 Password:
             </label>
